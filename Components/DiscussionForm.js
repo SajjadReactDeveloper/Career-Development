@@ -15,9 +15,9 @@ export default function DiscussionForm() {
     }
   return (
     <View style = {styles.container}>
-      <Text style = {{textAlign: 'center', marginBottom: 20, fontSize: 24}}>Post Query</Text>
-      <Text>Enter Query</Text>
-      <TextInput style = {styles.input} placeholder='Enter your Query' onChangeText={setQuery} />
+      <Text style = {{textAlign: 'center', marginBottom: 20, fontSize: 24, color: 'black'}}>Post Query</Text>
+      <Text style = {{ color: 'black' }}>Enter Query</Text>
+      <TextInput style = {styles.input} placeholder='Enter your Query' placeholderTextColor={"black"} onChangeText={setQuery} />
       <Pressable onPress={submit} style = {styles.btn}>
           <Text style = {{color: 'white'}}>Send</Text>
       </Pressable>
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 20,
         borderRadius: 10,
-        marginTop: 10
+        marginTop: 10,
+        color: 'black'
     },
 })

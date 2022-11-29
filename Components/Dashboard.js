@@ -10,22 +10,22 @@ export default function Dashboard({navigation}) {
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('AddJob')
         }}>
-            <Text>Add Jobs</Text>
+            <Text style = {{ color: 'black' }}>Add Jobs</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('AddFile')
         }}>
-            <Text>Upload Material</Text>
+            <Text style = {{ color: 'black' }}>Upload Material</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('PastPapers')
         }}>
-            <Text>Past Papers</Text>
+            <Text style = {{ color: 'black' }}>Past Papers</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('Login')
         }}>
-            <Text>Logout</Text>
+            <Text style = {{ color: 'black' }}>Logout</Text>
         </Pressable>
     </View>
   )
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         width: 150, 
         margin: 20,
-        alignItems: 'center'
+        alignItems: 'center',
+        color: 'black'
     }
 })

@@ -47,7 +47,7 @@ export default function UploadAttachments() {
     }
   return (
     <View style = {styles.container}>
-      <Text style = {{fontSize: 22, marginBottom: 10}}>Upload Attachments</Text>
+      <Text style = {{fontSize: 22, marginBottom: 10, color: 'black'}}>Upload Attachments</Text>
       <Pressable style = {styles.btn}>
           <Text style = {{color: 'white'}} onPress={submit}>Upload CV</Text>
       </Pressable>

@@ -10,42 +10,42 @@ export default function UserDashboard({navigation}) {
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('ViewJobs')
         }}>
-            <Text>View Jobs</Text>
+            <Text style = {{ color: 'black' }}>View Jobs</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('ViewTest')
         }}>
-            <Text>View Test</Text>
+            <Text style = {{ color: 'black' }}>View Test</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('ViewFile')
         }}>
-            <Text>View PDF</Text>
+            <Text style = {{ color: 'black' }}>View PDF</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('ViewVideo')
         }}>
-            <Text>View Videos</Text>
+            <Text style = {{ color: 'black' }}>View Videos</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('ViewPaper')
         }}>
-            <Text>View Papers</Text>
+            <Text style = {{ color: 'black' }}>View Papers</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('DiscussionForm')
         }}>
-            <Text>Discussion Form</Text>
+            <Text style = {{ color: 'black' }}>Discussion Form</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('ViewDiscussion')
         }}>
-            <Text>View Discussion</Text>
+            <Text style = {{ color: 'black' }}>View Discussion</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('Login')
         }}>
-            <Text>Logout</Text>
+            <Text style = {{ color: 'black' }}>Logout</Text>
         </Pressable>
     </View>
   )

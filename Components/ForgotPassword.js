@@ -16,13 +16,13 @@ export default function ForgotPassword() {
     }
   return (
     <View style = {styles.container}>
-      <Text style = {{textAlign: 'center', marginBottom: 20, fontSize: 24}}>Forgot Password</Text>
-      <Text>Email</Text>
-      <TextInput style = {styles.input} placeholder='Enter Email' onChangeText={setEmail} />
-      <Text>New Password</Text>
-      <TextInput style = {styles.input} placeholder='Enter New Password' />
-      <Text>Confirm Password</Text>
-      <TextInput style = {styles.input} placeholder='Confirm Password' onChangeText={setPassword} />
+      <Text style = {{textAlign: 'center', marginBottom: 20, fontSize: 24, color: 'black'}}>Forgot Password</Text>
+      <Text style = {{ color: 'black' }}>Email</Text>
+      <TextInput style = {styles.input} placeholderTextColor = "black" placeholder='Enter Email' onChangeText={setEmail} />
+      <Text style = {{ color: 'black' }}>New Password</Text>
+      <TextInput style = {styles.input} placeholderTextColor = "black" placeholder='Enter New Password' />
+      <Text style = {{ color: 'black' }}>Confirm Password</Text>
+      <TextInput style = {styles.input} placeholderTextColor = "black" placeholder='Confirm Password' onChangeText={setPassword} />
       <Pressable onPress={submit} style = {styles.btn}>
           <Text style = {{color: 'white'}}>Reset Password</Text>
       </Pressable>

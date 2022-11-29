@@ -17,18 +17,18 @@ export default function PastPapers() {
     }
   return (
     <View style = {styles.container}>
-      <Text style = {{fontSize: 24, marginBottom: 20, textAlign: 'center'}}>Upload Past Papers</Text>
+      <Text style = {{fontSize: 24, marginBottom: 20, textAlign: 'center', color: 'black'}}>Upload Past Papers</Text>
       <View>
-          <Text>Enter University Name</Text>
-          <TextInput placeholder='Enter University Name' style = {styles.input} onChangeText = {setUniversity} />
+          <Text style = {{ color: 'black' }}>Enter University Name</Text>
+          <TextInput placeholderTextColor={"black"} placeholder='Enter University Name' style = {styles.input} onChangeText = {setUniversity} />
       </View>
       <View>
-          <Text>Enter Year</Text>
-          <TextInput placeholder='Enter Year' style = {styles.input} onChangeText = {setYear} />
+          <Text style = {{ color: 'black' }}>Enter Year</Text>
+          <TextInput placeholderTextColor={"black"} placeholder='Enter Year' style = {styles.input} onChangeText = {setYear} />
       </View>
       <View>
-          <Text>Enter File Link</Text>
-          <TextInput placeholder='Enter File Link' style = {styles.input} onChangeText = {setLink} />
+          <Text style = {{ color: 'black' }}>Enter File Link</Text>
+          <TextInput placeholderTextColor={"black"} placeholder='Enter File Link' style = {styles.input} onChangeText = {setLink} />
       </View>
       <View>
           <Pressable onPress={submit} style = {styles.btn}><Text style = {{color: 'white'}}>Submit</Text></Pressable>

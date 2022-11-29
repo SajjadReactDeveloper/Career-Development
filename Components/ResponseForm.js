@@ -15,9 +15,9 @@ export default function ResponseForm({route, navigation}) {
     }
   return (
     <View style = {styles.container}>
-      <Text style = {{textAlign: 'center', marginBottom: 20, fontSize: 24}}>Give Response</Text>
-      <Text>Answer</Text>
-      <TextInput style = {styles.input} placeholder='Enter Answer' onChangeText={setAnswer} />
+      <Text style = {{textAlign: 'center', marginBottom: 20, fontSize: 24, color: 'black'}}>Give Response</Text>
+      <Text style = {{ color: 'black' }}>Answer</Text>
+      <TextInput style = {styles.input} placeholderTextColor = "black" placeholder='Enter Answer' onChangeText={setAnswer} />
       <Pressable onPress={submit} style = {styles.btn}>
           <Text style = {{color: 'white'}}>Send</Text>
       </Pressable>
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 20,
         borderRadius: 10,
-        marginTop: 10
+        marginTop: 10,
+        color: 'black'
     },
 })

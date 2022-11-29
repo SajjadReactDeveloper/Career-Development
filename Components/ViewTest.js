@@ -11,7 +11,7 @@ export default function ViewTest() {
 
   const getData = async () => {
     try {
-      const res = await axios.get('http://172.27.96.1:6000/test/viewTest');
+      const res = await axios.get('http://192.168.100.9:6000/test/viewTest');
       console.log(res);
       setData(res.data);
     } catch (error) {}

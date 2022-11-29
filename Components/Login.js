@@ -11,9 +11,10 @@ export default function Login() {
   const [password, setPassword] = React.useState();
   const navigation = useNavigation();
     const submit = async(e) => {
+      console.log('first')
         e.preventDefault();
         try {
-            const res = await axios.post('http://172.27.96.1:6000/user/login', {email, password});
+            const res = await axios.post('http:/192.168.100.9:6000/user/login', {email, password});
             await AsyncStorage.setItem('firstLogin', 'true');
             await AsyncStorage.setItem('token', JSON.stringify(res.data.token))
             alert(res.data.msg);
@@ -34,19 +35,21 @@ export default function Login() {
       <View style={styles.sectionStyle}>
           <MaterialCommunityIcons name='email' size={28} style = {{marginRight: 7, marginLeft: 7}} />
           <TextInput
-            style={{flex: 1, height: 100}}
+            style={{flex: 1, height: 100, color: 'black'}}
             placeholder="Enter Email"
             underlineColorAndroid="transparent"
             onChangeText={setEmail}
+            placeholderTextColor = "black"
           />
         </View>
         <View style={styles.sectionStyle}>
           <FontAwesome name='lock' size={24} style = {{marginRight: 7, marginLeft: 7}} />
           <TextInput
-            style={{flex: 1}}
+            style={{flex: 1, color: 'black'}}
             placeholder="Enter Password"
             underlineColorAndroid="transparent"
             onChangeText={setPassword}
+            placeholderTextColor = "black"
           />
         </View>
         <Text style = {{justifyContent: 'flex-end', marginTop: 20, color: 'white'}} onPress = {() => {

@@ -17,10 +17,10 @@ export default function AddFile() {
     }
   return (
     <View style = {styles.container}>
-      <Text style = {{fontSize: 24, marginBottom: 20, textAlign: 'center'}}>Upload PDF Files</Text>
+      <Text style = {{fontSize: 24, marginBottom: 20, textAlign: 'center', color: 'black'}}>Upload PDF Files</Text>
       <View>
-          <Text>Enter File Link</Text>
-          <TextInput placeholder='Enter File Link' style = {styles.input} onChangeText = {setLink} />
+          <Text style = {{ color: 'black' }}>Enter File Link</Text>
+          <TextInput placeholderTextColor="black" placeholder='Enter File Link' style = {styles.input} onChangeText = {setLink} />
       </View>
       <View>
           <Pressable style = {styles.btn}><Text style = {{color: 'white'}} onPress = {submit}>Submit</Text></Pressable>
@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 20,
         borderRadius: 10,
-        marginTop: 10
+        marginTop: 10,
+        color: 'black'
     },
     btn: {
         backgroundColor: 'green',

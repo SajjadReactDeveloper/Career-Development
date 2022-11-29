@@ -21,24 +21,24 @@ export default function AddJob() {
     <View style = {styles.container}>
       <Text style = {{fontSize: 24, marginBottom: 20, textAlign: 'center'}}>AddJob</Text>
       <View>
-          <Text>Company Name</Text>
-          <TextInput placeholder='Enter Company Name' style = {styles.input} onChangeText = {setName} />
+          <Text style = {{ color: 'black' }}>Company Name</Text>
+          <TextInput placeholder='Enter Company Name' style = {styles.input} placeholderTextColor = "black" onChangeText = {setName} />
       </View>
       <View>
-          <Text>Job Title</Text>
-          <TextInput placeholder='Enter Job Title' style = {styles.input} onChangeText = {setTitle} />
+          <Text style = {{ color: 'black' }}>Job Title</Text>
+          <TextInput placeholder='Enter Job Title' style = {styles.input} placeholderTextColor = "black" onChangeText = {setTitle} />
       </View>
       <View>
-          <Text>Job Description</Text>
-          <TextInput placeholder='Enter Job Description' style = {styles.input} onChangeText = {setDescription} />
+          <Text style = {{ color: 'black' }}>Job Description</Text>
+          <TextInput placeholder='Enter Job Description' style = {styles.input} placeholderTextColor = "black" onChangeText = {setDescription} />
       </View>
       <View>
-          <Text>Job Location</Text>
-          <TextInput placeholder='Enter Job Location' style = {styles.input} onChangeText = {setLocation} />
+          <Text style = {{ color: 'black' }}>Job Location</Text>
+          <TextInput placeholder='Enter Job Location' style = {styles.input} placeholderTextColor = "black" onChangeText = {setLocation} />
       </View>
       <View>
-          <Text>Experience Required</Text>
-          <TextInput placeholder='Enter Experience Required' style = {styles.input} onChangeText = {setExperience} />
+          <Text style = {{ color: 'black' }}>Experience Required</Text>
+          <TextInput placeholder='Enter Experience Required' style = {styles.input} placeholderTextColor = "black" onChangeText = {setExperience} />
       </View>
       <View>
           <Pressable onPress={submit} style = {styles.btn}><Text style = {{color: 'white'}}>Submit</Text></Pressable>
@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 20,
         borderRadius: 10,
-        marginTop: 10
+        marginTop: 10,
+        color: 'black'
     },
     btn: {
         backgroundColor: 'green',

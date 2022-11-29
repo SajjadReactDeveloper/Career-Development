@@ -16,14 +16,14 @@ export default function AddVideo() {
     }
   return (
     <View style = {styles.container}>
-      <Text style = {{fontSize: 24, marginBottom: 20, textAlign: 'center'}}>Upload Video Lectures</Text>
+      <Text style = {{fontSize: 24, marginBottom: 20, textAlign: 'center', color: 'black'}}>Upload Video Lectures</Text>
       <View>
-          <Text>Enter Lecture Name</Text>
-          <TextInput placeholder='Enter Lecture Name' style = {styles.input} onChangeText = {setName} />
+          <Text style = {{ color: 'black' }}>Enter Lecture Name</Text>
+          <TextInput placeholderTextColor={"black"} placeholder='Enter Lecture Name' style = {styles.input} onChangeText = {setName} />
       </View>
       <View>
-          <Text>Enter Video Link</Text>
-          <TextInput placeholder='Enter Video Link' style = {styles.input} onChangeText = {setLink} />
+          <Text style = {{ color: 'black' }}>Enter Video Link</Text>
+          <TextInput placeholderTextColor={"black"} placeholder='Enter Video Link' style = {styles.input} onChangeText = {setLink} />
       </View>
       <View>
           <Pressable onPress={submit} style = {styles.btn}><Text style = {{color: 'white'}}>Submit</Text></Pressable>
@@ -43,7 +43,8 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 20,
         borderRadius: 10,
-        marginTop: 10
+        marginTop: 10,
+        color: 'black'
     },
     btn: {
         backgroundColor: 'green',

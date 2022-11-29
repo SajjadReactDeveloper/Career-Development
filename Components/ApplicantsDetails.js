@@ -6,7 +6,7 @@ export default function ApplicantsDetails({route, navigation}) {
      console.log(data);
   return (
     <View>
-      <Text>Applicants Details</Text>
+      <Text style = {{ color: 'black' }}>Applicants Details</Text>
       <Image source={data.cv} style = {{width: 150, height: 150}} />
     </View>
   )

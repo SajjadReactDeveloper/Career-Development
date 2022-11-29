@@ -15,12 +15,7 @@ export default function AddTest() {
         try {
             const res = await axios.post("172.27.96.1:6000/test/addTest", {
               university: name,
-              question,
-              A,
-              B,
-              C,
-              D,
-              correctOption,
+              questions: [question, A, B, C, D, correctOption],
             });
             alert(res.data)
         } catch (error) {

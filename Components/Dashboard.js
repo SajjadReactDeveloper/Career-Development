@@ -13,11 +13,6 @@ export default function Dashboard({navigation}) {
             <Text>Add Jobs</Text>
         </Pressable>
         <Pressable style = {styles.btn} onPress = {() => {
-            navigation.navigate('AddTest')
-        }}>
-            <Text>Add Test</Text>
-        </Pressable>
-        <Pressable style = {styles.btn} onPress = {() => {
             navigation.navigate('AddFile')
         }}>
             <Text>Upload Material</Text>
